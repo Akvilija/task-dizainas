@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* Fonts */
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
+
+  /*  shadows   */
+  --headingShadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  /* font     */
+
+  --fontWeight: "unset";
+  /* Colours */
+  --grey: #e2e8f0;
+  --white: #f8fafc;
+  --blue: #645cff;
+  --red: #ff0000;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: var(--bodyFont);
+}
+
+/*
+header
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  font-family: var(--headingFont);
+  box-shadow: var(--headingShadow);
+  background-color: var(--white);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding-left: 10px;
+}
+
+.todo-color {
+  color: var(--blue);
+}
+
+/*  
+Main
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: var(--headingShadow);
+  padding: 30px;
+}
+
+form h2 {
+  font-weight: var(--fontWeight);
+}
+
+.capitalise {
+  text-transform: capitalize;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-next-to-input {
+  display: flex;
+}
+
+.btn-submit {
+  border: 0px;
+  padding: 1px 30px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.error {
+  text-transform: capitalize;
+  color: var(--red);
+}
+
+.task {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.task h4 {
+  font-weight: var(--fontWeight);
+}
+
+.first {
+  margin-top: 40px;
+  padding-left: 45px;
+}
+
+.second h4 {
+  text-decoration: line-through;
+}
+
+.second h4 span {
+  margin-right: 30px;
+  margin-left: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+button {
+  border: 0px;
+  background-color: var(--white);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: unset;
+}

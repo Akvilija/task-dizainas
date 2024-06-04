@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Best <span class="todo-color">ToDo</span> App</h1>
+      <div class="icons">
+        <ul>
+          <li>
+            <img src="fb.png" alt="fb icon" width="20" />
+          </li>
+          <li>
+            <img src="tweet.png" alt="tweet icon" width="20" />
+          </li>
+          <li>
+            <img src="linkedin.png" alt="linkedin icon" width="20" />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <h2 class="capitalise">your tasks</h2>
+          <div class="form-control">
+            <div class="btn-next-to-input">
+              <input
+                type="text"
+                name="add"
+                id="add"
+                placeholder="e.g. wash dishes"
+              />
+              <button type="submit" class="btn-submit">Add</button>
+            </div>
+            <small class="error">there was an error</small>
+          </div>
+        </form>
+
+        <section>
+          <div class="task first">
+            <div>
+              <h4 class="task-name">Take out trashes</h4>
+            </div>
+            <div>
+              <button type="button" class="btn-edit">
+                <img src="edit-svgrepo-com.svg" alt="edit button" width="10" />
+              </button>
+              <button type="button" class="btn-delete">
+                <img src="delete-svgrepo-com.svg" alt="btn delete" width="10" />
+              </button>
+            </div>
+          </div>
+          <div class="task second">
+            <h4>
+              <span><i class="far fa-check-circle"></i></span>
+              Walk the dog
+            </h4>
+
+            <div>
+              <button type="button" class="btn edit">
+                <img src="edit-svgrepo-com.svg" alt="edit button" width="10" />
+              </button>
+              <button type="button" class="btn delete">
+                <img src="delete-svgrepo-com.svg" alt="btn delete" width="10" />
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
